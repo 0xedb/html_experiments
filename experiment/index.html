@@ -38,11 +38,50 @@
       paragraph
       <span>hello<span>&nbsp;hide</span></span>
       pp
-    </p><span>another</span>
+    </p>
+    <span>another</span>
+
+    <div>
+      <span
+        >Span #1, in the div.
+        <span>Span #2, in the span that's in the div.</span>
+      </span>
+    </div>
+    <span>Span #3, not in the div at all.</span>
+    <section>
+      <div>adjacent</div>
+    </section>
+    <div>none</div>
+    <div id="ya">yaaay</div>
+    <article>
+      one
+      <div>
+        two
+        <div>haeyyyyyyyyyyyyyyyyy</div>
+      </div>
+      <div>what?</div>
+    </article>
+    <div>three</div>
+    <div>naaay</div>
   </body>
   <style>
+    article > div {
+      background: brown;
+    }
+    article ~ div {
+      background: red;
+    }
+    #ya + div {
+      color: green;
+    }
+    section + div {
+      background: blueviolet;
+    }
     p > span {
       background: yellow;
+    }
+    div > span {
+      background: blue;
     }
   </style>
 </html>
