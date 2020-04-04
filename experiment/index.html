@@ -5,6 +5,7 @@
     <link rel="stylesheet" href="./css.css" type="text/css" />
   </head>
   <body>
+    
     <h1>home sweet home</h1>
     <hr style="width: 20%;" />
     <ul>
@@ -79,14 +80,34 @@
     </article>
     <div>three</div>
     <div>naaay</div>
+    <div id='grid'>
+      <div></div>
+      <div></div>
+      <div></div>
+      <div></div>
+      <div></div>
+      <div></div>
+    </div>
   </body>
   <style>
-    p > img {
+    #grid {
+      display: grid;
+      grid-template-columns: auto;
+      grid-template-rows: 20vh 20vh;
+      grid-gap: 7px;
+    }
+
+    #grid div {
+      padding: 10px;
+      background-color: rgb(100, 100, 136);
+      /* margin: 4px 10px; */
+    }
+    /* p > img {
       float: right;
       clear: right;
       padding: 20px;
-    }
-    span {
+    } */
+    /* span {
     }
     div:hover {
       font-size: 2rem;
@@ -116,6 +137,6 @@
     }
     div:hover::first-letter {
       font-size: 4rem;
-    }
+    } */
   </style>
 </html>
